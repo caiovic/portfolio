@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("custom.css");
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Montserrat", sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(images/CREATIVE_3.png);
+    background-size: cover;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+}
+header .logo {
+  width: 50%;
+}
+header .logo img {
+    width: 140px;
+}
+header .menu ul {
+    display: flex;
+}
+header .menu ul li {
+    padding: 0 20px;
+    list-style: none;
+}
+header .menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--tx-color);
+    transition: 0.5s ease;
+}
+header .menu ul li a:hover {
+    color: var(--main-color);
+}
+header .menu-mobile {
+    display: none;
+}
+header .btn-mobile {
+    display: none;
+}
+
+
+
+/* -----------------------MAIN------------------------*/
+#home .container {
+    width: 100%;
+    height: 100vh;
+}
+#home .container .icons {
+    width: 10%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+    position: fixed;
+    z-index: 999;
+}
+#home .container .icons ion-icon {
+    padding: 30px 0;
+    font-size: 2rem;
+    color: var(--tx-color);
+    transition: 0.5s ease;
+}
+#home .container .icons ion-icon:hover {
+    color: var(--main-color);
+}
+#home .container .title {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 60px;
+}
+#home .container .title h1 {
+    color: var(--tx-color);
+    text-transform: uppercase;
+    font-size: 8rem;
+    letter-spacing: 5px;
+}
+#home .container .title h2 {
+    color: var(--tx-color);
+    text-transform: uppercase;
+    letter-spacing: 40px;
+    font-size: 3rem;
+    margin-left: 30px;
+}
+#home .container .title h3 {
+    color: var(--tx-color);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 20px;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+
+
+/* -----------------------ABOUT------------------------*/
+#about .container {
+    width: 100%;
+    height: 100vh;
+    background: url(images/CREATIVE_3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+#about .container .title {
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 60px;
+}
+#about .container .title h1 {
+    color: var(--tx-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: left;
+}
+#about .container .title p {
+    color: var(--tx-color);
+    width: 500px;
+    margin-top: 30px;
+}
+#about .container .box-title {
+    width: 420px;
+    height: 45vh;
+    margin-top: 20px;
+    padding: 0 10px;
+    box-shadow: 0 0 10px 0 var(--bg-color);
+    border-radius: 20px;
+}
+#about .container .box-title span {
+    color: var(--tx-color);
+}
+#about .container .box-title .b1 {
+    width: 400px;
+    height: 8px;
+    background: var(--tx-color);
+    margin-top: 2px;
+    border-radius: 5px;
+}
+#about .container .box-title .b2 {
+    width: 350px;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+#about .container .box-title .b3 {
+    width: 300px;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+#about .container .box-title .b4 {
+    width: 280px;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+#about .container .box-title .b5 {
+    width: 250px;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+
+
+/* -----------------------PORTIFÓLIO------------------------*/
+#portfolio .container {
+    width: 100%;
+    height: 100vh;
+    background: url(images/CREATIVE_3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 0 var(--bs-color);
+    transition: 0.4s ease;
+}
+#portfolio .container input[type=radio] {
+    display: none;
+}
+#portfolio .container .card {
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    margin: 150px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0 0 10px 0 var(--bs-color);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#portfolio .container .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#portfolio .container .card h1 {
+    position: absolute;
+    z-index: 9;
+    color: var(--tx-color);
+    font-size: 6rem;
+    margin-top: 60px;
+}
+#portfolio .container .card p {
+    position: absolute;
+    z-index: 9;
+    width: 400px;
+    color: var(--tx-color);
+    margin-top: 200px;
+    text-align: justify;
+}
+#portfolio .container .card button {
+    position: absolute;
+    z-index: 9;
+    margin-top: 400px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: var(--tx-color);
+    background: var(--bs-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#portfolio .container .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+    transform: translateX(-40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+    transform: translateX(40%) scale(0.8);
+    opacity: 0.4;
+    z-index: 0;
+}
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+
+
+
+
+/* -----------------------CONTACT------------------------*/
+#contact .container {
+    width: 100%;
+    height: 100vh;
+    background: url(images/CREATIVE_3.png);
+    background-size: cover;
+}
+#contact .container .content-contact {
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 200px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#contact .content-contact .contact-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: var(--tx-color);
+}
+#contact .content-contact .contact-left h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .linha {
+    width: 350px;
+    height: 3px;
+    background: var(--tx-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contact .content-contact .contact-left ion-icon {
+    font-size: 2rem;
+    padding: 20px 0;
+}
+#contact .content-contact .contact-left span {
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+#contact .content-contact .contact-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: var(--tx-color);
+}
+#contact .content-contact .contact-right h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contact .content-contact .contact-right input[type=email],
+#contact .content-contact .contact-right input[type=text] {
+    border-radius: 20px;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+}
+#contact .content-contact .contact-right textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    padding: 15px 20px;
+}
+
+
+
+/* -----------------------FOOTER------------------------*/
+footer {
+    width: 100%;
+    height: 80px;
+    color: var(--tx-color);
+    line-height: 80px;
+    text-align: center;
+    background: var(--bg-color);
+    position: relative;
+    top: -80px;
+}
+footer a {
+    color: var(--main-color);
+    text-decoration: none;
+}
